@@ -3,14 +3,14 @@
 
 int main(int argc, char *argv[])
 {
-    int input;
-    scanf("%d",&input);
-    
-    if (input>=0)
-     printf("absolute value is %d\n", input);
-    else
-     printf("absolute value is %d\n", -input);
-  
+    char c;
+    int num = 0;
+    printf("input a string:");
+    while ((c=getchar() ) != '\n')
+     {if (c>='0'&& c<='9')
+       num = num+1;
+       }
+     printf("the number of digits is %i\n", num);
   system("PAUSE");	
   return 0;
 }
